@@ -19,7 +19,7 @@ imprimeTexto (x)
 imprimeTexto ("Eu sou um aluno")
 
 function soma(){
-    return 7623737 * 73763
+    return 7623737 * 737637327237278278278272732737732
 }
 
 console.log(soma());
@@ -44,3 +44,29 @@ function multiplicacao (numero3 = 55, numero4 = 5){
     return(numero4 * numero3)
 }
 imprimeTexto(multiplicacao(somaDeNumeros(3,4), somaDeNumeros(5,10)))
+
+//Expressão da função
+
+const constanteSoma = function(nume1,nume2){return nume1 + nume2}
+
+console.log(constanteSoma(9,3))
+
+// Funções e var são "Listadas" no topo do arquivo
+
+// Arrow Function 
+
+const apresentaArrow = nome => `meu nome é ${nome}`
+const somaEmFlecha = (nu1,nu2) => nu1 + nu2
+
+console.log (apresentaArrow("Samuel"))
+console.log(somaEmFlecha(2,4))
+
+const somaNumeroPequenos = (num1, num2) => {
+    if(num1 > 10 || num2 > 10){
+        return "Essa função é apenas para números pequenos"
+    } else {
+        return num1 + num2;
+    }
+}
+
+console.log (somaNumeroPequenos(2,3))
